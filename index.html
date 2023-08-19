@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Money Exchange</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <main>
+      <h1 id="">Money Exchange</h1>
+      <h3>Result : <span id="result"></span></h3>
+
+      <div id="container">
+        <div class="sell">
+         
+          <input type="number" placeholder="amount" id="moneyAmount"/>
+           <label for="text">For Sell:</label>
+          <select name="text" id="sellSelector"> 
+            <!-- <option value="money" class="kyatCurrency" >None</option> -->
+            <option value="money" class="usdCurrency">Usd</option>
+            <option value="money" class="eurCurrency">Eur</option>
+            <option value="money" class="sgdCurrency">Sgd</option>
+            <option value="money" class="bahtCurrency">Baht</option>
+            <option value="money" class="kyatCurrency">Kyat</option>
+           
+          </select>
+        </div>
+
+        <div class="buy">
+         <label for="text">For Buy:</label>
+
+          <select name="text" id="buySelector">
+            <!-- <option value="money" class="kyatCurrency">None</option> -->
+            <option value="money" class="usdCurrency">Usd</option>
+            <option value="money" class="eurCurrency">Eur</option>
+            <option value="money" class="sgdCurrency">Sgd</option>
+            <option value="money" class="bahyCurrency">Baht</option>
+            <option value="money" class="kyatCurrency">Kyat</option>
+            
+          </select>
+        </div>
+      </div>
+
+      <div>
+        <button id="exchange">Exchange</button>
+      </div>
+    </main>
+
+    <script src="./js/app.js"></script>
+  </body>
+</html>
